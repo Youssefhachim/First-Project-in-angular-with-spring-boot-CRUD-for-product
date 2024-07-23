@@ -1,0 +1,14 @@
+<h2>Add/Edit Product</h2>
+<form (ngSubmit)="saveProduct()">
+  <label for="name">Name:</label>
+  <input id="name" [(ngModel)]="product.name" name="name" required>
+
+  <label for="price">Price:</label>
+  <input id="price" type="number" [(ngModel)]="product.price" name="price" required>
+
+  <label for="quantity">Quantity:</label>
+  <input id="quantity" type="number" [(ngModel)]="product.quantity" name="quantity" required>
+
+  <button type="submit">Save</button>
+</form>
+<a routerLink="/products">Back to List</a>
